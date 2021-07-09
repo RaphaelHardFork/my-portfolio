@@ -9,7 +9,10 @@ loading page
 # TODO
 
 - finir Traduction & vérification
-- mettre en forme les REALISATIONS!!
+- mettre en forme les REALISATIONS!! (button repo, repo back & front, date, lang)
+- About opacity, forme, plus de photo(plus grande ou deux column)
+- plus difficile => faire un carousel
+- play a music on IPFS
 
 - polices & logos (ipfs,fleek,...)
 - img job (OCP,THESE, MASTER,...)

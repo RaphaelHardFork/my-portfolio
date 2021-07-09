@@ -3,12 +3,29 @@ import ReactDOM from "react-dom"
 import "./index.css"
 import App from "./App"
 import reportWebVitals from "./reportWebVitals"
-import { ChakraProvider } from "@chakra-ui/react"
+import { ChakraProvider, extendTheme } from "@chakra-ui/react"
+import { BrowserRouter as Router } from "react-router-dom"
+
+const theme = extendTheme({
+  fonts: {
+    heading: "Carter One, cursive",
+    body: "Heebo, sans-serif",
+  },
+  styles: {
+    global: {
+      p: {
+        fontSize: "xl",
+      },
+    },
+  },
+})
 
 ReactDOM.render(
   <React.StrictMode>
-    <ChakraProvider>
-      <App />
+    <ChakraProvider theme={theme}>
+      <Router>
+        <App />
+      </Router>
     </ChakraProvider>
   </React.StrictMode>,
   document.getElementById("root")

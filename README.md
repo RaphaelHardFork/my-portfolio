@@ -14,6 +14,8 @@ loading page
 - plus difficile => faire un carousel
 - play a music on IPFS
 
+- Link et button nav list
+
 - polices & logos (ipfs,fleek,...)
 - img job (OCP,THESE, MASTER,...)
 - photo background

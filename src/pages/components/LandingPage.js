@@ -1,15 +1,14 @@
-import { Box, Image, Center } from "@chakra-ui/react"
+import { Box, Center } from "@chakra-ui/react"
 import Header from "./Header"
 import Decentralized from "../home/Decentralized"
 import KnowHow from "../home/KnowHow"
-import { Switch, Route, Link } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 import LookingFor from "../home/LookingFor"
 import Footer from "./Footer"
 import LearnedCode from "../about/LearnedCode"
 import Realisations from "../realisations/Realisations"
 import Contracts from "../contractsPage/Contracts"
 import Contact from "./Contact"
-import { useState } from "react"
 
 const LandingPage = () => {
   return (

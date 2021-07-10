@@ -1,15 +1,4 @@
-import {
-  Box,
-  Container,
-  Flex,
-  Text,
-  Heading,
-  Tab,
-  Tabs,
-  TabList,
-  TabPanel,
-  TabPanels,
-} from "@chakra-ui/react"
+import { Box, Tab, Tabs, TabList, TabPanel, TabPanels } from "@chakra-ui/react"
 import Explanation from "./Explanation"
 
 const Contracts = () => {

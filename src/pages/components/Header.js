@@ -1,6 +1,5 @@
 import {
   Box,
-  Text,
   Heading,
   Container,
   Flex,
@@ -8,9 +7,7 @@ import {
   ModalOverlay,
   ModalContent,
   ModalHeader,
-  ModalFooter,
   ModalBody,
-  ModalCloseButton,
   Button,
   useDisclosure,
 } from "@chakra-ui/react"

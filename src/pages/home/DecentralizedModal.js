@@ -1,9 +1,6 @@
 import {
-  Box,
   Text,
   Heading,
-  Button,
-  Center,
   Modal,
   ModalOverlay,
   ModalContent,

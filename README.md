@@ -8,6 +8,7 @@ loading page
 
 # TODO
 
+- control colors
 - finir Traduction & vérification
 - mettre en forme les REALISATIONS!! (button repo, repo back & front, date, lang)
 - About opacity, forme, plus de photo(plus grande ou deux column)

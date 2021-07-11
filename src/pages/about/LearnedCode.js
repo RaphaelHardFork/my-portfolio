@@ -1,5 +1,6 @@
 import { Box, Heading, Text, Container } from "@chakra-ui/react"
 import { useGlobalSetting } from "../../hooks/useGlobalSetting"
+import Carousel from "./Carousel"
 
 const LearnedCode = () => {
   const { lang } = useGlobalSetting()
@@ -241,13 +242,30 @@ const LearnedCode = () => {
               photographie, voici quelque cliché que j’ai réaliser : Je
               m’intéresse à l’art depuis peu, notamment aux NFT, j’ai minter
               quelque NFT avec mes photos, mais ils ont besoin d’être redéployer
-              sur IPFS. Voici quelque musique What I work for ? Depuis début
-              2020, je travaille sur un projet de science ouverte appeler
-              CoScience. Nous avons pour ambition de changer la manière de faire
-              et réviser la sciences, notamment en redonnant le contrôle de la
-              science à la communauté scientifique et en proposant des outils
-              simples et pertinent pour améliorer la circulation des
-              connaissances produite par la sciences. Plus d’information :{" "}
+              sur IPFS. Voici quelque musique
+            </Text>
+            <Carousel />
+          </Container>
+        </Box>
+      </Box>
+      <Box
+        bgImage="https://ipfs.io/ipfs/QmaZ2aKviUZ9fYi1jDjnaybf5zJqZ8KQkDBfs53rPH4mLx"
+        bgSize="cover"
+        bgAttachment="fixed"
+        minH="50vh"
+        p="10"
+      >
+        <Heading>What I work for ?</Heading>
+        <Box mb="20" borderRadius="10" pb="4" color="black" bg="whiteAlpha.700">
+          <Container maxW="90%">
+            <Text>
+              Depuis début 2020, je travaille sur un projet de science ouverte
+              appeler CoScience. Nous avons pour ambition de changer la manière
+              de faire et réviser la sciences, notamment en redonnant le
+              contrôle de la science à la communauté scientifique et en
+              proposant des outils simples et pertinent pour améliorer la
+              circulation des connaissances produite par la sciences. Plus
+              d’information :{" "}
             </Text>
           </Container>
         </Box>

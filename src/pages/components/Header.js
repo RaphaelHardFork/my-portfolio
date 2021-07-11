@@ -22,7 +22,7 @@ const Header = () => {
 
   return (
     <>
-      <Box bg="blackAlpha.900">
+      <Box bg="black">
         <Container maxW="90%">
           <Flex justifyContent="space-between" alignItems="center">
             <Heading as="h1" py="10" color="white">

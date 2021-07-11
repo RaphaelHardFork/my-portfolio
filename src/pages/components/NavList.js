@@ -28,6 +28,7 @@ const NavList = ({ isOpen, onClose }) => {
         fontSize="xl"
         display="flex"
         textAlign={isOpen ? "center" : ""}
+        color="white"
       >
         <ListItem
           borderRadius="10"

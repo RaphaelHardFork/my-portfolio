@@ -1,4 +1,4 @@
-import { Box, Heading, Container, Text } from "@chakra-ui/react"
+import { Box, Heading, Container, Text, Link, Flex } from "@chakra-ui/react"
 import { useGlobalSetting } from "../../hooks/useGlobalSetting"
 
 const LookingFor = () => {
@@ -6,8 +6,8 @@ const LookingFor = () => {
 
   return (
     <Box shadow="dark-lg" py="20" mb="80" bg="black">
-      <Container maxW="container.xl">
-        <Heading fontFamily="Carter One,cursive" py="6" color="white" as="h1">
+      <Container color="white" maxW="container.xl">
+        <Heading fontFamily="Carter One,cursive" py="6" as="h1">
           {lang === "EN"
             ? "What I'm looking for:"
             : "Qu'est ce que je recherche :"}
@@ -65,10 +65,26 @@ const LookingFor = () => {
             </Text>
           </>
         )}
+        {lang === "EN" ? (
+          <Heading mb="4" as="h3">
+            Explications & links
+          </Heading>
+        ) : (
+          <Heading mb="4" as="h3">
+            Explications & liens
+          </Heading>
+        )}
+        <Flex fontSize="1.2rem" fontWeight="bold" flexDirection="column">
+          <Link href="https://www.freecodecamp.org/news/what-is-web3/">
+            Web3
+          </Link>
+          <Link href="https://decrypt.co/resources/dapps">Dapp</Link>
+          <Link href="https://ipfs.io/">IPFS</Link>
 
-        <Text>
-          Explications & liens : Web3 : Dapp : Solidity : Polkadot : Substrate :
-        </Text>
+          <Link href="https://soliditylang.org/">Solidity</Link>
+          <Link href="https://polkadot.network/">Polkadot</Link>
+          <Link href="https://substrate.dev/">Substrate</Link>
+        </Flex>
       </Container>
     </Box>
   )

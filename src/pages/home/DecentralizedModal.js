@@ -8,6 +8,7 @@ import {
   ModalFooter,
   ModalBody,
   ModalCloseButton,
+  Link,
 } from "@chakra-ui/react"
 import { useGlobalSetting } from "../../hooks/useGlobalSetting"
 
@@ -15,7 +16,7 @@ const DecentralizedModal = ({ isOpen, onClose }) => {
   const { lang } = useGlobalSetting()
   return (
     <>
-      <Modal size="xl" isOpen={isOpen} onClose={onClose}>
+      <Modal size="2xl" isOpen={isOpen} onClose={onClose}>
         <ModalOverlay />
         <ModalContent>
           <ModalHeader>
@@ -97,8 +98,17 @@ const DecentralizedModal = ({ isOpen, onClose }) => {
             )}
           </ModalBody>
 
-          <ModalFooter>
-            <Text>Others ressources</Text>
+          <ModalFooter fontSize="1.5rem">
+            <Text me="4">
+              {" "}
+              {lang === "EN"
+                ? "Others ressources:"
+                : "Autres ressources :"}{" "}
+            </Text>
+            <Link me="4" href="https://ipfs.io/">
+              IPFS
+            </Link>
+            <Link href="https://ens.domains/fr/">ENS domains</Link>
           </ModalFooter>
         </ModalContent>
       </Modal>

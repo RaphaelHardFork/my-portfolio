@@ -13,11 +13,11 @@ loading page
 
 # TODO
 
-- control colors
 - finir Traduction & vérification
 - mettre en forme les REALISATIONS!! (button repo, repo back & front, date, lang)
-- about => faire un carousel
 - play a music on IPFS
+- HOOKS color accessibility
+- Accessibility (alt on images globally...)
 
 - Link et button nav list
 

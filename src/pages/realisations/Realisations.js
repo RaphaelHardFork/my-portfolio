@@ -8,6 +8,7 @@ import {
   Grid,
   Link,
   Center,
+  useColorModeValue,
 } from "@chakra-ui/react"
 import { useGlobalSetting } from "../../hooks/useGlobalSetting"
 import { realisationsList } from "./realisationsList"
@@ -16,9 +17,10 @@ import { ReactComponent as GithubIcon2 } from "../../img/signe-github.svg"
 
 const Realisations = () => {
   const { lang } = useGlobalSetting()
+  const bgBox = useColorModeValue("whiteAlpha.400", "blackAlpha.400")
 
   return (
-    <Box minH="100vh" bg="saddlebrown">
+    <Box bg={bgBox} minH="100vh">
       <Container maxW="container.xl">
         <Heading py="6">
           {lang === "EN" ? "My realisations" : "Mes réalisations"}

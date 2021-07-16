@@ -35,21 +35,26 @@ const Carousel = () => {
   }
 
   function handleTurnPhoto(e) {
-    console.log(e)
     console.log(e.target.id)
-    if (e.target.value === 0) {
-      setImg((a) => a - 1)
-    } else {
-      setImg((a) => a + 1)
+    if (e.target.id === "plus") {
+      setImg((a) => (a + 1 + imgList.length) % imgList.length)
+    } else if (e.target.id === "minus") {
+      setImg((a) => (a - 1 + imgList.length) % imgList.length)
     }
-    //() => setImg((a) => (a + 1) % imgList.length)
   }
+  //() => setImg((a) => (a + 1) % imgList.length)
+
   return (
     <>
       <Box>
         <Center>
-          <Button onClick={handleTurnPhoto} left="20" position="relative">
-            <ChevronLeftIcon id="plus" />
+          <Button
+            id="minus"
+            onClick={handleTurnPhoto}
+            left="20"
+            position="relative"
+          >
+            <ChevronLeftIcon id="minus" />
           </Button>
           <Image
             width="auto"
@@ -59,9 +64,15 @@ const Carousel = () => {
             borderStyle="solid"
             borderColor="black"
             src={`https://ipfs.io/ipfs/${imgList[img]}`}
+            fallbackSrc="https://via.placeholder.com/3000?Text=Loading..."
           ></Image>
-          <Button onClick={handleTurnPhoto} right="20" position="relative">
-            <ChevronRightIcon id="minus" />
+          <Button
+            id="plus"
+            onClick={handleTurnPhoto}
+            right="20"
+            position="relative"
+          >
+            <ChevronRightIcon id="plus" />
           </Button>
           <Button onClick={debug}>
             <MinusIcon />

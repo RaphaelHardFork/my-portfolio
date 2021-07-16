@@ -1,11 +1,21 @@
-import { Box, Tab, Tabs, TabList, TabPanel, TabPanels } from "@chakra-ui/react"
+import {
+  Box,
+  Tab,
+  Tabs,
+  TabList,
+  TabPanel,
+  TabPanels,
+  useColorModeValue,
+} from "@chakra-ui/react"
 import Explanation from "./Explanation"
 
 const Contracts = () => {
+  const bgBox = useColorModeValue("white", "black")
+  const bgTabs = useColorModeValue("gray.300", "gray.700")
   return (
-    <Box bg="black" p="6">
+    <Box minH="90vh" bg={bgBox} p="6">
       <Tabs
-        bg="gray.800"
+        bg={bgTabs}
         borderRadius="10"
         colorScheme="purple"
         isFitted

@@ -14,7 +14,7 @@ const LearnedCode = () => {
         p="10"
         minH="50vh"
       >
-        <Heading as="h1" py="6">
+        <Heading color="white" as="h1" py="6">
           {lang === "EN"
             ? "Where I learned the code"
             : "Où est-ce que j'ai appris le code"}
@@ -138,7 +138,7 @@ const LearnedCode = () => {
         minH="50vh"
         p="10"
       >
-        <Heading as="h1" py="6">
+        <Heading color="white" as="h1" py="6">
           {lang === "EN"
             ? "What I did before"
             : "Qu'est ce que j'ai fait avant"}
@@ -228,7 +228,7 @@ const LearnedCode = () => {
         minH="50vh"
         p="10"
       >
-        <Heading>What I love doing:</Heading>
+        <Heading color="white">What I love doing:</Heading>
         <Box mb="20" borderRadius="10" pb="4" color="black" bg="whiteAlpha.700">
           <Container maxW="90%">
             <Text>
@@ -255,7 +255,7 @@ const LearnedCode = () => {
         minH="50vh"
         p="10"
       >
-        <Heading>What I work for ?</Heading>
+        <Heading color="white">What I work for ?</Heading>
         <Box mb="20" borderRadius="10" pb="4" color="black" bg="whiteAlpha.700">
           <Container maxW="90%">
             <Text>

@@ -6,6 +6,7 @@ import {
   Container,
   Button,
   Center,
+  useColorModeValue,
 } from "@chakra-ui/react"
 
 import { Link } from "react-router-dom"
@@ -13,6 +14,7 @@ import { useGlobalSetting } from "../../hooks/useGlobalSetting"
 
 const KnowHow = () => {
   const { lang } = useGlobalSetting()
+  const bgBox = useColorModeValue("white", "black")
 
   const boxes = [
     {
@@ -30,16 +32,15 @@ const KnowHow = () => {
   ]
 
   return (
-    <Box shadow="dark-lg" mb="80" bg="black" py="20">
+    <Box shadow="dark-lg" mb="80" bg={bgBox} py="20">
       <Container maxW="container.xl">
-        <Heading fontFamily="Carter One,cursive" py="6" color="white" as="h1">
+        <Heading fontFamily="Carter One,cursive" py="6" as="h1">
           {lang === "EN" ? "What I can do" : "Ce que je sais faire :"}
         </Heading>
         <Flex
           flexDirection={{ base: "column", lg: "row" }}
           justifyContent={{ base: "center", lg: "space-between" }}
           alignItems="center"
-          color="white"
         >
           {boxes.map((elem) => {
             return (

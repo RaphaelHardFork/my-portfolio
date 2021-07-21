@@ -147,14 +147,58 @@ const LearnedCode = () => {
           <Container maxW="90%">
             {lang === "EN" ? (
               <>
+                <Text as="i">
+                  Before the formation I was unemployed during 10 months.
+                </Text>
                 <Heading>PhD Student at Paris-Est University</Heading>
+                <Text>
+                  During 18 months I was in a preparation of a PhD in material
+                  science at IFSTTAR (The French Institute of science and
+                  technology for transport, development and networks). My thesis
+                  topic was focused on manufacture of hemp concrete, an
+                  insulating material, more accurately my goal was to identify
+                  molecules implicated in a delay in setting of the cement once
+                  mixed with hemp shavings.
+                </Text>
                 <Heading>
                   Master degree’s in vegatale biology at Claude Bernard
                   University
                 </Heading>
+                <Text>
+                  This master's degree was focused on the study of the plant
+                  through a wide range of disciplines (taxonomy,
+                  evolution,agronomy, physiology, ...) with two main areas of
+                  competence which were biochemistry (identification of
+                  molecules and knowledge of metabolic pathways) and genetics
+                  (study of gene networks and genetic engineering methods).
+                </Text>
+                <Text>
+                  I had the opportunity to go to Australia for an internship in
+                  Newcastle University. In this internship I was able to
+                  practice different analytical chemistry techniques such as
+                  HPLC, UV-Vis spectrometry and NMR. But also mix these
+                  analytical techniques with research of new molecules from the
+                  genome of differents species.
+                </Text>
+                <Text>
+                  I also, during the first year, complete a shorter internship
+                  at Lyon 1 microbial ecology laboratory. During this
+                  internship, I helped a PhD student to highligh the anaerobic
+                  respiration of bacterial by looking for genes. So I acquired
+                  skills in DNA extraction, PCR, and in the manipulation of
+                  statistical tools for the genes research.
+                </Text>
                 <Heading>
                   Bachelor degree’s in ecology at Claude Bernard University
                 </Heading>
+                <Text>
+                  I graduated with a bachelor's degree in ecology, the exact
+                  title was biology of organisms and populations. During this
+                  bachelor's degree we discovered the mechanisms of evolution,
+                  the study of biodiversity, bio-statistical methods, population
+                  dynamics and ecology at all scales (from the individual to the
+                  biosphere).{" "}
+                </Text>
               </>
             ) : (
               <>
@@ -231,19 +275,43 @@ const LearnedCode = () => {
         <Heading color="white">What I love doing:</Heading>
         <Box mb="20" borderRadius="10" pb="4" color="black" bg="whiteAlpha.700">
           <Container maxW="90%">
-            <Text>
-              Je suis globalement un grand fan de nature, je suis passionné de
-              voir les prouesses de la nature et pour cette raison je suis
-              fasciné par le biomimétisme. Le fait d’imiter la nature pour
-              construire des technologies. Voici quelques exemple : (train
-              japon, speedo, samsung, velcro). Voici des acteurs de ce mouvement
-              que je suis : (biomimicry institute (pagefb), asknature, gunter
-              pauli, idriss aberkane (bioniria), Janine, … J’aime également la
-              photographie, voici quelque cliché que j’ai réaliser : Je
-              m’intéresse à l’art depuis peu, notamment aux NFT, j’ai minter
-              quelque NFT avec mes photos, mais ils ont besoin d’être redéployer
-              sur IPFS. Voici quelque musique
-            </Text>
+            {lang === "EN" ? (
+              <>
+                <Text>
+                  Overall I'm a big fan of nature, I'm passionate about seeing
+                  the feats of nature and for this reason I'm fascinated by
+                  biomimicry. Biomimicry is the act of drawing inspiration from
+                  Nature to develop technologies, infrastructures or even
+                  organizations. We can cite the exemple of the Shinkansen
+                  (Japan) inspired by the beak of kingfishers, the polyethan
+                  suits banned at the 2010 Olympics inspired by the skin of
+                  sharks or the well-known exemple of Velcro closures inspired
+                  by burdocks fruits.
+                </Text>
+                <Text>
+                  Here are some of the actors in this movement who inspired me:
+                  Biomimicry Institute, Asknature.org, Janine Benyus, Idriss
+                  Aberkane and Gunter Pauli.
+                </Text>
+              </>
+            ) : (
+              <Text>
+                Je suis globalement un grand fan de nature, je suis passionné de
+                voir les prouesses de la nature et pour cette raison je suis
+                fasciné par le biomimétisme. Le biomimétisme est le fait de
+                s’inspirer de la Nature pour développer des technologies, des
+                infrastructures ou encore des organisations. On peut citer
+                l’exemple du Shinkansen inspiré du bec des martins-pécheurs, les
+                combinaisons en polyuréthane interdite aux JO de 2010 inspirées
+                de la peau des requins ou encore l’exemple bien connu des
+                fermetures en Velcro inspirées des fruits de bardanes. Voici
+                quelques acteurs de ce mouvement qui m’ont inspiré : Biomimicry
+                Institute, Asknature.org Janine Benyus, Idriss Aberkane, Gunter
+                Pauli. J’aime également faire de la photographie, notamment
+                capturer des détails macroscopiques.
+              </Text>
+            )}
+
             <Carousel />
           </Container>
         </Box>
@@ -258,15 +326,37 @@ const LearnedCode = () => {
         <Heading color="white">What I work for ?</Heading>
         <Box mb="20" borderRadius="10" pb="4" color="black" bg="whiteAlpha.700">
           <Container maxW="90%">
-            <Text>
-              Depuis début 2020, je travaille sur un projet de science ouverte
-              appeler CoScience. Nous avons pour ambition de changer la manière
-              de faire et réviser la sciences, notamment en redonnant le
-              contrôle de la science à la communauté scientifique et en
-              proposant des outils simples et pertinent pour améliorer la
-              circulation des connaissances produite par la sciences. Plus
-              d’information :{" "}
-            </Text>
+            {lang === "EN" ? (
+              <>
+                <Text>
+                  I have long benne interested in how science works, so my
+                  attention quickly shifted to the business model of scientific
+                  journals and its consequences for the quality of science.
+                  Since early 2020, I have been working on an open science
+                  project called CoScience. Our ambition is to change the way of
+                  sharing knowledge resulting from scientific research work, our
+                  main goal is to give back control of science to the scientific
+                  community by offering simple and relevant tools to improve the
+                  circulation of knowlegde.
+                </Text>
+              </>
+            ) : (
+              <>
+                <Text>
+                  Je suis intéressé depuis longtemps sur la manière dont
+                  fonctionne la science, ainsi mon attention s’est rapidement
+                  concentrer sur le modèle économique des revues scientifiques
+                  et ses conséquences sur la qualité de la sciences. Depuis
+                  début 2020, je travaille sur un projet de science ouverte
+                  appeler CoScience. Nous avons pour ambition de changer la
+                  manière de partager les connaissances issues du travaille de
+                  recherche scientifique, notre principal objectif est de
+                  redonner le contrôle de la science à la communauté
+                  scientifique en proposant des outils simple et pertinent pour
+                  améliorer la circulation des connaissances.{" "}
+                </Text>
+              </>
+            )}
           </Container>
         </Box>
       </Box>

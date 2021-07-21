@@ -1,9 +1,21 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Link } from "@chakra-ui/react"
+import { useGlobalSetting } from "../../hooks/useGlobalSetting"
 
 const Contact = () => {
+  const { lang } = useGlobalSetting()
+
   return (
     <Box>
-      <Text fontSize="3xl">I need MONEY</Text>
+      <Link
+        isExternal
+        href={
+          lang === "EN"
+            ? "https://www.linkedin.com/in/rapha%C3%ABl-pellet-7757ab129/?locale=fr_FR"
+            : "https://www.linkedin.com/in/rapha%C3%ABl-pellet-7757ab129/?locale=en_US"
+        }
+      >
+        LinkedIn
+      </Link>
     </Box>
   )
 }

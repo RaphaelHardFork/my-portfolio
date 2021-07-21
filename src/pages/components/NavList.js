@@ -14,7 +14,7 @@ import { ReactComponent as FranceIcon } from "../../img/france.svg"
 import { ReactComponent as EnglandIcon } from "../../img/united-kingdom.svg"
 import { ReactComponent as Sun } from "../../img/sun.svg"
 import { ReactComponent as Moon } from "../../img/moon.svg"
-import { ReactComponent as Vision } from "../../img/vision.svg"
+//import { ReactComponent as Vision } from "../../img/vision.svg"
 
 const NavList = ({ isOpen, onClose }) => {
   const { lang, setLang } = useGlobalSetting()

@@ -1,14 +1,6 @@
-import {
-  Box,
-  Heading,
-  Text,
-  Container,
-  Image,
-  Center,
-  Button,
-} from "@chakra-ui/react"
+import { Box, Image, Center, Button } from "@chakra-ui/react"
 import { useState } from "react"
-import { ChevronRightIcon, ChevronLeftIcon, MinusIcon } from "@chakra-ui/icons"
+import { ChevronRightIcon, ChevronLeftIcon } from "@chakra-ui/icons"
 
 const Carousel = () => {
   const imgList = [
@@ -27,12 +19,6 @@ const Carousel = () => {
     "QmNw8fri1wKssTn8vBeKwPsPMfaoYDUiQJMLLkxpKNPjui",
   ]
   const [img, setImg] = useState(Math.round(Math.random() * imgList.length))
-
-  const debug = () => {
-    console.log(img)
-    console.log(imgList[img])
-    console.log(imgList.length)
-  }
 
   function handleTurnPhoto(e) {
     console.log(e.target.id)
@@ -73,9 +59,6 @@ const Carousel = () => {
             position="relative"
           >
             <ChevronRightIcon id="plus" />
-          </Button>
-          <Button onClick={debug}>
-            <MinusIcon />
           </Button>
         </Center>
       </Box>
